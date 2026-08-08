@@ -41,18 +41,25 @@ export default function Home({ navigate }: Props) {
         />
         <div className="hero-overlay" aria-hidden />
         <div className="container hero-content">
-          {/* Spacer keeps middle block centered above the bottom CTA */}
-          <div className="hero-spacer" aria-hidden />
-
-          {/* Middle of video: badge + title (darker text) */}
-          <div className="hero-middle">
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
-              <img src={medalIcon} alt="" style={{ width: 22, height: 22, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 0.95 }} />
-              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.5vw, 14px)', fontWeight: 700, color: '#7A2E02', letterSpacing: 2, textTransform: 'uppercase' }}>
+          {/* Top of video: badge — bright orange, larger */}
+          <div className="hero-top">
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
+              <img src={medalIcon} alt="" style={{ width: 28, height: 28, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 1 }} />
+              <span style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: 'clamp(15px, 2.8vw, 20px)',
+                fontWeight: 800,
+                color: '#E85D04',
+                letterSpacing: 2.5,
+                textTransform: 'uppercase',
+              }}>
                 Trusted By Many Experts
               </span>
             </div>
+          </div>
 
+          {/* Middle of video: title */}
+          <div className="hero-middle">
             <h1 style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
               fontWeight: 800,

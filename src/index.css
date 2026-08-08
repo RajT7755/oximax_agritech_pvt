@@ -122,12 +122,15 @@ button, input, select, textarea {
   box-sizing: border-box;
 }
 
-/* Equal flex weight with bottom so middle block centers in the video */
-.hero-spacer {
+/* Top / middle / bottom — equal flex so title stays centered */
+.hero-top {
   flex: 1 1 0;
   width: 100%;
   min-height: 0;
-  pointer-events: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: clamp(4px, 1vw, 8px);
 }
 
 .hero-middle {
