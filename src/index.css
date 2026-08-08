@@ -112,7 +112,7 @@ button, input, select, textarea {
   width: 100%;
   max-width: 900px;
   text-align: center;
-  /* Fill hero height so top/bottom blocks pin to video edges */
+  /* Fill hero height: spacer | middle title | bottom CTA */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -122,18 +122,31 @@ button, input, select, textarea {
   box-sizing: border-box;
 }
 
-.hero-top {
+/* Equal flex weight with bottom so middle block centers in the video */
+.hero-spacer {
+  flex: 1 1 0;
   width: 100%;
-  flex-shrink: 0;
+  min-height: 0;
+  pointer-events: none;
 }
 
-.hero-bottom {
+.hero-middle {
   width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Sit on the lower edge of the video */
+  justify-content: center;
+}
+
+.hero-bottom {
+  flex: 1 1 0;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   padding-bottom: clamp(4px, 1vw, 8px);
 }
 

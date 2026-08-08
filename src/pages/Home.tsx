@@ -41,11 +41,14 @@ export default function Home({ navigate }: Props) {
         />
         <div className="hero-overlay" aria-hidden />
         <div className="container hero-content">
-          {/* Top of video: badge + title */}
-          <div className="hero-top">
+          {/* Spacer keeps middle block centered above the bottom CTA */}
+          <div className="hero-spacer" aria-hidden />
+
+          {/* Middle of video: badge + title (darker text) */}
+          <div className="hero-middle">
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
-              <img src={medalIcon} alt="" style={{ width: 22, height: 22, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 0.85 }} />
-              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.5vw, 14px)', fontWeight: 700, color: '#E85D04', letterSpacing: 2, textTransform: 'uppercase' }}>
+              <img src={medalIcon} alt="" style={{ width: 22, height: 22, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 0.95 }} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.5vw, 14px)', fontWeight: 700, color: '#7A2E02', letterSpacing: 2, textTransform: 'uppercase' }}>
                 Trusted By Many Experts
               </span>
             </div>
@@ -56,7 +59,7 @@ export default function Home({ navigate }: Props) {
               fontSize: 'clamp(32px, 6vw, 64px)',
               lineHeight: 1.1,
               letterSpacing: '-0.02em',
-              color: '#1B2A4A',
+              color: '#0A1628',
               margin: 0,
             }}>
               Premium Dairy Products
@@ -68,7 +71,7 @@ export default function Home({ navigate }: Props) {
             <p style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: 'clamp(15px, 2.5vw, 20px)',
-              color: '#6B7280',
+              color: '#374151',
               lineHeight: 1.7,
               maxWidth: 560,
               margin: '0 auto 20px',
