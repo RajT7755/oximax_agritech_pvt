@@ -69,7 +69,8 @@ button, input, select, textarea {
   isolation: isolate;
   background-color: #FDFBF7;
   display: flex;
-  align-items: center;
+  /* Content sits high in the hero (not vertically centered) */
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   /* Height matches video display height: min(native, scaled to viewport) */
@@ -79,7 +80,7 @@ button, input, select, textarea {
     calc(100vw * var(--hero-video-h) / var(--hero-video-w))
   );
   min-height: 280px;
-  padding: clamp(32px, 5vw, 56px) 0;
+  padding: clamp(16px, 3vw, 28px) 0 clamp(40px, 6vw, 72px);
 }
 
 .hero-video {
@@ -112,6 +113,9 @@ button, input, select, textarea {
   width: 100%;
   max-width: 900px;
   text-align: center;
+  /* Nudge title block further up */
+  margin-top: clamp(4px, 1.5vw, 12px);
+  padding-top: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
