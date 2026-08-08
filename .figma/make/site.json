@@ -1,0 +1,11 @@
+{
+  "title": "OXIMAX AGRITECH — Premium Dairy Products",
+  "description": "Premium dairy ingredients from OXIMAX AGRITECH — Instant Skimmed Milk Powder and Table Butter for food manufacturers across India.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

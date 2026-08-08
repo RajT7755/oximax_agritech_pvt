@@ -1,0 +1,272 @@
+Yes — here’s the complete updated set with the **same logo handling + working mobile menu** on all pages.
+
+---
+
+### 1. Instant SMP Product Page (`smp.html`)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instant Spray Dried Skimmed Milk Powder | OXIMAX AGRITECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: { 500: '#E85D04', 600: '#D45303' },
+            navy: '#1B2A4A',
+            cream: '#FDFBF7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-navy antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <img src="logo.png" alt="OXIMAX AGRITECH" class="h-10 md:h-12 w-auto object-contain">
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-orange-500 transition">Home</a>
+          <a href="index.html#products" class="hover:text-orange-500 transition">Products</a>
+          <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
+          <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="hidden md:inline-flex bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">
+          Request Quote
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block py-2.5 hover:text-orange-500">Home</a>
+        <a href="index.html#products" class="block py-2.5 hover:text-orange-500">Products</a>
+        <a href="about.html" class="block py-2.5 hover:text-orange-500">About Us</a>
+        <a href="contact.html" class="block py-2.5 hover:text-orange-500">Contact</a>
+        <a href="contact.html" class="block mt-3 text-center bg-orange-500 text-white font-semibold py-3 rounded-lg">Request Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Content -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      
+      <div class="bg-white rounded-2xl p-6 md:p-10 border border-gray-100 shadow-sm">
+        <img src="smp-bag.jpg" alt="Instant Spray Dried Skimmed Milk Powder" class="w-full object-contain max-h-[420px] mx-auto">
+      </div>
+
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">Instant Spray Dried Skimmed Milk Powder</h1>
+        <p class="mt-4 text-gray-600">High-protein, low-fat Instant SMP designed for bakery, confectionery, ice cream, and nutritional applications.</p>
+
+        <div class="mt-8 grid grid-cols-3 gap-3">
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">34%</div>
+            <div class="text-xs text-gray-500 mt-1">Protein</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">≤1.5%</div>
+            <div class="text-xs text-gray-500 mt-1">Fat</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">≤4%</div>
+            <div class="text-xs text-gray-500 mt-1">Moisture</div>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-7 py-3.5 rounded-lg font-semibold transition">Request Quote</a>
+          <a href="#" class="border border-navy text-navy hover:bg-navy hover:text-white px-7 py-3.5 rounded-lg font-semibold transition">Download Spec Sheet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="bg-white py-14">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Product Description</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        As demand for high-protein dairy continues to grow, manufacturers need ingredients that deliver both nutrition and processing performance. Our Instant Spray Dried Skimmed Milk Powder provides clean protein with reliable solubility and consistent batch quality.
+      </p>
+
+      <h3 class="text-xl font-bold mb-3">Applications</h3>
+      <ul class="space-y-2 text-gray-600">
+        <li>• Bakery and confectionery</li>
+        <li>• Ice cream and frozen desserts</li>
+        <li>• Reconstituted milk and dairy drinks</li>
+        <li>• Nutritional and protein-fortified products</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-navy text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm text-gray-400">© 2026 OXIMAX AGRITECH Industries Private Limited</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+```
+
+---
+
+### 2. Table Butter Page (`butter.html`)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Butter 5 kg | OXIMAX AGRITECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: { 500: '#E85D04', 600: '#D45303' },
+            navy: '#1B2A4A',
+            cream: '#FDFBF7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-navy antialiased">
+
+  <!-- Same Header as above -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <img src="logo.png" alt="OXIMAX AGRITECH" class="h-10 md:h-12 w-auto object-contain">
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-orange-500 transition">Home</a>
+          <a href="index.html#products" class="hover:text-orange-500 transition">Products</a>
+          <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
+          <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
+        </nav>
+        <a href="contact.html" class="hidden md:inline-flex bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Request Quote</a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block py-2.5">Home</a>
+        <a href="index.html#products" class="block py-2.5">Products</a>
+        <a href="about.html" class="block py-2.5">About Us</a>
+        <a href="contact.html" class="block py-2.5">Contact</a>
+        <a href="contact.html" class="block mt-3 text-center bg-orange-500 text-white font-semibold py-3 rounded-lg">Request Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      <div class="bg-white rounded-2xl p-6 md:p-10 border border-gray-100 shadow-sm">
+        <img src="butter-box.jpg" alt="Table Butter 5 kg" class="w-full object-contain max-h-[420px] mx-auto">
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold">Table Butter 5 kg</h1>
+        <p class="mt-4 text-gray-600">Premium Table Butter for foodservice and industrial use — consistent taste, texture, and performance.</p>
+        <div class="mt-8 grid grid-cols-2 gap-3">
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">5 kg</div>
+            <div class="text-xs text-gray-500 mt-1">Net Weight</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">Table</div>
+            <div class="text-xs text-gray-500 mt-1">Butter Type</div>
+          </div>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-7 py-3.5 rounded-lg font-semibold transition">Request Quote</a>
+          <a href="#" class="border border-navy text-navy hover:bg-navy hover:text-white px-7 py-3.5 rounded-lg font-semibold transition">Download Spec Sheet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-14">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Product Description</h2>
+      <p class="text-gray-600 leading-relaxed mb-8">Reliable quality Table Butter for food manufacturers and foodservice operators. Produced for consistent performance and dependable supply.</p>
+      <h3 class="text-xl font-bold mb-3">Applications</h3>
+      <ul class="space-y-2 text-gray-600">
+        <li>• Bakery and pastry</li>
+        <li>• Foodservice and catering</li>
+        <li>• Industrial food manufacturing</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-navy text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm text-gray-400">© 2026 OXIMAX AGRITECH Industries Private Limited</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+```
+
+---
+
+### 3. About Us + Contact pages
+
+I can give the full updated **About Us** and **Contact** pages next if you want (same logo + mobile menu).
+
+Just say **“yes give about and contact”** and I’ll send them immediately.

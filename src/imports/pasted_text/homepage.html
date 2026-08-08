@@ -1,0 +1,334 @@
+1. Homepage Code
+HTML<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OXIMAX AGRITECH | Premium Instant SMP & Table Butter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: {
+              500: '#E85D04',
+              600: '#D45303',
+            },
+            navy: '#1B2A4A',
+            cream: '#FDFBF7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-navy font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img src="your-logo.png" alt="OXIMAX AGRITECH" class="h-10 md:h-12">
+          <span class="font-bold text-lg hidden sm:block">OXIMAX AGRITECH</span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#" class="hover:text-orange-500 transition">Home</a>
+          <a href="#products" class="hover:text-orange-500 transition">Products</a>
+          <a href="#about" class="hover:text-orange-500 transition">About Us</a>
+          <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <a href="#contact" class="hidden md:inline-flex bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition">
+          Request Quote
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+            Premium Instant SMP<br>& Table Butter
+          </h1>
+          <p class="mt-6 text-lg text-gray-600 max-w-lg">
+            High-protein dairy ingredients trusted by food manufacturers across India
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3.5 rounded-lg font-semibold transition">
+              Request Quote
+            </a>
+            <a href="#products" class="border border-navy text-navy hover:bg-navy hover:text-white px-8 py-3.5 rounded-lg font-semibold transition">
+              View Products
+            </a>
+          </div>
+        </div>
+
+        <!-- Right side visual / logo treatment -->
+        <div class="flex justify-center">
+          <div class="w-64 h-64 md:w-80 md:h-80 bg-orange-500 rounded-full flex items-center justify-center shadow-xl">
+            <!-- Replace with your exact logo if preferred -->
+            <img src="your-logo.png" alt="OXIMAX Logo" class="w-40 md:w-48">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 py-6">
+      <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-sm font-medium text-gray-600">
+        <span>FSSAI Licensed</span>
+        <span>High Protein (34%)</span>
+        <span>Instant Solubility</span>
+        <span>Batch Consistency</span>
+        <span>Reliable Indian Supply</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="products" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold">Featured Products</h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Engineered for performance. Built for consistency. Our Instant Skimmed Milk Powder and Table Butter help manufacturers meet rising demand for high-protein and reliable dairy ingredients.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- SMP Card -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-100">
+          <div class="aspect-[4/3] bg-gray-50 flex items-center justify-center p-8">
+            <img src="smp-bag.jpg" alt="Instant Skimmed Milk Powder" class="max-h-full object-contain">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Instant Spray Dried Skimmed Milk Powder</h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              High-protein, low-fat Instant SMP designed for bakery, confectionery, ice cream, and nutritional applications.
+            </p>
+            <a href="smp.html" class="inline-block mt-5 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition">
+              View Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Butter Card -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-100">
+          <div class="aspect-[4/3] bg-gray-50 flex items-center justify-center p-8">
+            <img src="butter-box.jpg" alt="Table Butter 5kg" class="max-h-full object-contain">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Table Butter 5 kg</h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              Premium Table Butter for foodservice and industrial use — consistent taste, texture, and performance.
+            </p>
+            <a href="butter.html" class="inline-block mt-5 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition">
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">Why Choose OXIMAX</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-14 h-14 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">1</div>
+          <h3 class="mt-5 text-xl font-bold">High Protein Performance</h3>
+          <p class="mt-3 text-gray-600 text-sm">Our Instant SMP delivers 34% protein with excellent solubility, supporting the growing demand for protein-rich formulations.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">2</div>
+          <h3 class="mt-5 text-xl font-bold">Consistent Quality</h3>
+          <p class="mt-3 text-gray-600 text-sm">Strict process controls ensure batch-to-batch reliability so your production stays predictable.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">3</div>
+          <h3 class="mt-5 text-xl font-bold">Reliable Supply</h3>
+          <p class="mt-3 text-gray-600 text-sm">Dependable Indian manufacturing and steady availability for food manufacturers and foodservice operators.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">Need consistent dairy ingredients for your production?</h2>
+      <p class="mt-4 text-gray-600">Get in touch for specifications, samples, or bulk requirements.</p>
+      <a href="#contact" class="inline-block mt-8 bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-lg font-semibold text-lg transition">
+        Request Quote
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-3">
+          <img src="your-logo-white.png" alt="OXIMAX" class="h-10">
+          <span class="font-bold">OXIMAX AGRITECH</span>
+        </div>
+        <p class="text-sm text-gray-300">© 2026 OXIMAX AGRITECH Industries Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+2. Instant SMP Product Detail Page (smp.html)
+HTML<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instant Spray Dried Skimmed Milk Powder | OXIMAX AGRITECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: { 500: '#E85D04', 600: '#D45303' },
+            navy: '#1B2A4A',
+            cream: '#FDFBF7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-navy">
+
+  <!-- Same Header as Homepage -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <div class="flex items-center gap-3">
+          <img src="your-logo.png" alt="OXIMAX AGRITECH" class="h-10 md:h-12">
+          <span class="font-bold text-lg hidden sm:block">OXIMAX AGRITECH</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-orange-500">Home</a>
+          <a href="index.html#products" class="hover:text-orange-500">Products</a>
+          <a href="#" class="hover:text-orange-500">About Us</a>
+          <a href="#" class="hover:text-orange-500">Contact</a>
+        </nav>
+        <a href="#contact" class="hidden md:inline-flex bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold">
+          Request Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Hero -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <!-- Product Image -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        <img src="smp-bag.jpg" alt="Instant Spray Dried Skimmed Milk Powder" class="w-full object-contain max-h-[480px] mx-auto">
+      </div>
+
+      <!-- Product Info -->
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+          Instant Spray Dried Skimmed Milk Powder
+        </h1>
+        <p class="mt-4 text-gray-600">
+          High-protein, low-fat Instant SMP designed for bakery, confectionery, ice cream, and nutritional applications.
+        </p>
+
+        <!-- Specs -->
+        <div class="mt-8 grid grid-cols-3 gap-4">
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">34%</div>
+            <div class="text-xs text-gray-500 mt-1">Protein</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">1.5%</div>
+            <div class="text-xs text-gray-500 mt-1">Fat</div>
+          </div>
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-2xl font-bold text-orange-500">4%</div>
+            <div class="text-xs text-gray-500 mt-1">Moisture</div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3.5 rounded-lg font-semibold transition">
+            Request Quote
+          </a>
+          <a href="#" class="border border-navy text-navy hover:bg-navy hover:text-white px-8 py-3.5 rounded-lg font-semibold transition">
+            Download Spec Sheet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description + Applications -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-bold mb-4">Product Description</h2>
+        <p class="text-gray-600 leading-relaxed">
+          As demand for high-protein dairy continues to grow, manufacturers need ingredients that deliver both nutrition and processing performance. Our Instant Spray Dried Skimmed Milk Powder provides clean protein with reliable solubility and consistent batch quality — making it a dependable choice for a wide range of food applications.
+        </p>
+
+        <h3 class="text-xl font-bold mt-10 mb-4">Applications</h3>
+        <ul class="space-y-2 text-gray-600">
+          <li>• Bakery and confectionery</li>
+          <li>• Ice cream and frozen desserts</li>
+          <li>• Reconstituted milk and dairy drinks</li>
+          <li>• Nutritional and protein-fortified products</li>
+          <li>• Yoghurt and cultured dairy products</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as homepage) -->
+  <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm text-gray-300">© 2026 OXIMAX AGRITECH Industries Private Limited</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+How to use this code
+
+Save the first code as index.html
+Save the second as smp.html
+Replace:
+your-logo.png → your exact logo file
+smp-bag.jpg → the SMP product photo you shared
+butter-box.jpg → the Butter box photo
+
+Open index.html in your browser

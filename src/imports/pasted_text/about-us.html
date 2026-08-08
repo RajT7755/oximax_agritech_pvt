@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | OXIMAX AGRITECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: { 500: '#E85D04', 600: '#D45303' },
+            navy: '#1B2A4A',
+            cream: '#FDFBF7'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-navy antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="logo.png" alt="OXIMAX AGRITECH" class="h-9 md:h-10 w-auto object-contain">
+          <span class="font-bold text-lg tracking-tight">OXIMAX AGRITECH</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium">
+          <a href="index.html" class="hover:text-orange-500 transition">Home</a>
+          <a href="index.html#products" class="hover:text-orange-500 transition">Products</a>
+          <a href="about.html" class="text-orange-500">About Us</a>
+          <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="hidden md:inline-flex bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">
+          Request Quote
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block py-2.5">Home</a>
+        <a href="index.html#products" class="block py-2.5">Products</a>
+        <a href="about.html" class="block py-2.5 text-orange-500">About Us</a>
+        <a href="contact.html" class="block py-2.5">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 md:pt-28 md:pb-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-orange-500 text-xs font-bold uppercase tracking-[0.25em] mb-5">
+        OUR PURPOSE
+      </p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+        Better dairy ingredients,<br>built for confidence.
+      </h1>
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        OXIMAX AGRITECH supplies dependable milk powder and butter solutions for food manufacturers across India.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quality Section -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Text -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-6">
+            Quality that works in the real world
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-5">
+            We focus on dairy ingredients that help manufacturers formulate, produce, and scale with confidence. Our approach combines controlled processing, consistent specifications, and responsive supply.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            From Instant Skimmed Milk Powder to Table Butter, every product is selected for practical performance across bakery, confectionery, foodservice, and nutritional applications.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="rounded-2xl overflow-hidden">
+          <img src="about-image.jpg" alt="Quality dairy ingredients" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we stand for -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        What we stand for
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-md transition">
+          <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-5">
+            <i class="fa-solid fa-medal text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Consistent Quality</h3>
+          <p class="text-gray-600 text-sm">
+            Reliable batch-to-batch specifications.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-md transition">
+          <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-5">
+            <i class="fa-solid fa-shield-halved text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Food Safety</h3>
+          <p class="text-gray-600 text-sm">
+            Controlled, hygienic manufacturing practices.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-md transition">
+          <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-5">
+            <i class="fa-solid fa-truck text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Reliable Supply</h3>
+          <p class="text-gray-600 text-sm">
+            Dependable support for growing businesses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm text-gray-400">© 2026 OXIMAX AGRITECH Industries Private Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
