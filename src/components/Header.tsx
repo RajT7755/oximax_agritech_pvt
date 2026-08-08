@@ -35,10 +35,11 @@ export default function Header({ currentPage, navigate }: Props) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          minHeight: 64,
+          minHeight: 80,
           height: 'auto',
-          paddingTop: 8,
-          paddingBottom: 8,
+          paddingTop: 10,
+          paddingBottom: 10,
+          gap: 16,
         }}
       >
         <button
@@ -51,8 +52,9 @@ export default function Header({ currentPage, navigate }: Props) {
             display: 'flex',
             alignItems: 'center',
             gap: 10,
-            flexShrink: 1,
+            flexShrink: 0,
             minWidth: 0,
+            lineHeight: 0,
           }}
           aria-label="OXIMAX AGRITECH — go to homepage"
         >
@@ -60,6 +62,7 @@ export default function Header({ currentPage, navigate }: Props) {
             src={logoImg}
             alt="OXIMAX AGRITECH Industries Private Limited"
             className="header-logo"
+            decoding="async"
           />
         </button>
 

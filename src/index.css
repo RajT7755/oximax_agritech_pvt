@@ -321,11 +321,19 @@ button, input, select, textarea {
 }
 
 .header-logo {
-  height: clamp(44px, 8vw, 64px);
+  /* Larger, sharp logo — no blend modes that muddy the image */
+  height: clamp(56px, 10vw, 88px);
   width: auto;
-  max-width: min(220px, 55vw);
+  max-width: min(320px, 62vw);
   object-fit: contain;
-  mix-blend-mode: multiply;
+  object-position: left center;
+  mix-blend-mode: normal;
+  filter: none;
+  opacity: 1;
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: block;
 }
 
 .footer-logo {
