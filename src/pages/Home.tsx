@@ -41,63 +41,69 @@ export default function Home({ navigate }: Props) {
         />
         <div className="hero-overlay" aria-hidden />
         <div className="container hero-content">
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
-            <img src={medalIcon} alt="" style={{ width: 22, height: 22, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 0.85 }} />
-            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.5vw, 14px)', fontWeight: 700, color: '#E85D04', letterSpacing: 2, textTransform: 'uppercase' }}>
-              Trusted By Many Experts
-            </span>
+          {/* Top of video: badge + title */}
+          <div className="hero-top">
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
+              <img src={medalIcon} alt="" style={{ width: 22, height: 22, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 0.85 }} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.5vw, 14px)', fontWeight: 700, color: '#E85D04', letterSpacing: 2, textTransform: 'uppercase' }}>
+                Trusted By Many Experts
+              </span>
+            </div>
+
+            <h1 style={{
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              fontWeight: 800,
+              fontSize: 'clamp(32px, 6vw, 64px)',
+              lineHeight: 1.1,
+              letterSpacing: '-0.02em',
+              color: '#1B2A4A',
+              margin: 0,
+            }}>
+              Premium Dairy Products
+            </h1>
           </div>
 
-          <h1 style={{
-            fontFamily: "'Plus Jakarta Sans', sans-serif",
-            fontWeight: 800,
-            fontSize: 'clamp(32px, 6vw, 64px)',
-            lineHeight: 1.1,
-            letterSpacing: '-0.02em',
-            color: '#1B2A4A',
-            margin: '0 0 24px',
-          }}>
-            Premium Dairy Products
-          </h1>
+          {/* Bottom of video: subtitle + CTA */}
+          <div className="hero-bottom">
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 'clamp(15px, 2.5vw, 20px)',
+              color: '#6B7280',
+              lineHeight: 1.7,
+              maxWidth: 560,
+              margin: '0 auto 20px',
+            }}>
+              High quality dairy ingredients trusted by food manufacturers across India
+            </p>
 
-          <p style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 'clamp(15px, 2.5vw, 20px)',
-            color: '#6B7280',
-            lineHeight: 1.7,
-            maxWidth: 560,
-            margin: '0 auto 40px',
-          }}>
-            High quality dairy ingredients trusted by food manufacturers across India
-          </p>
-
-          <button
-            onClick={() => navigate('contact')}
-            style={{
-              backgroundColor: '#E85D04',
-              color: '#FFFFFF',
-              border: 'none',
-              borderRadius: 12,
-              padding: '16px 32px',
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontWeight: 700,
-              fontSize: 'clamp(15px, 2vw, 17px)',
-              cursor: 'pointer',
-              minHeight: 56,
-              transition: 'background-color 0.2s',
-              boxShadow: '0 4px 20px rgba(232,93,4,0.25)',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 10,
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#D45303' }}
-            onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#E85D04' }}
-          >
-            Request Quote
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-            </svg>
-          </button>
+            <button
+              onClick={() => navigate('contact')}
+              style={{
+                backgroundColor: '#E85D04',
+                color: '#FFFFFF',
+                border: 'none',
+                borderRadius: 12,
+                padding: '16px 32px',
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontWeight: 700,
+                fontSize: 'clamp(15px, 2vw, 17px)',
+                cursor: 'pointer',
+                minHeight: 56,
+                transition: 'background-color 0.2s',
+                boxShadow: '0 4px 20px rgba(232,93,4,0.25)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 10,
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#D45303' }}
+              onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#E85D04' }}
+            >
+              Request Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
