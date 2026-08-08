@@ -3,6 +3,7 @@ import smpImg from '../assets/images/smp-product.jpeg'
 import butterImg from '../assets/images/butter-product.jpeg'
 import badgeIcon from '../assets/images/badge-icon.png'
 import medalIcon from '../assets/images/medal-icon.png'
+import heroVideo from '../assets/videos/hero-bg.mp4'
 
 interface Props {
   navigate: (p: Page) => void
@@ -26,8 +27,20 @@ export default function Home({ navigate }: Props) {
   return (
     <div className="has-mob-cta">
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section style={{ backgroundColor: '#FDFBF7', padding: 'clamp(32px, 6vw, 48px) 0 clamp(48px, 8vw, 80px)' }}>
-        <div className="container" style={{ maxWidth: 900, textAlign: 'center' }}>
+      <section className="hero" aria-label="Premium dairy products">
+        <video
+          className="hero-video"
+          src={heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={smpImg}
+          aria-hidden
+        />
+        <div className="hero-overlay" aria-hidden />
+        <div className="container hero-content">
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
             <img src={medalIcon} alt="" style={{ width: 22, height: 22, objectFit: 'contain', mixBlendMode: 'multiply', opacity: 0.85 }} />
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.5vw, 14px)', fontWeight: 700, color: '#E85D04', letterSpacing: 2, textTransform: 'uppercase' }}>
