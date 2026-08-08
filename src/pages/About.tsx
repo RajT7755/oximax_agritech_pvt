@@ -198,6 +198,73 @@ export default function About({ navigate }: Props) {
             ))}
           </div>
 
+          {/* Company / legal details from product packaging */}
+          <div style={{
+            marginTop: 'clamp(40px, 6vw, 64px)',
+            backgroundColor: '#FFFFFF',
+            border: '1px solid #F3F4F6',
+            borderRadius: 20,
+            padding: 'clamp(24px, 4vw, 40px)',
+            maxWidth: 800,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 12,
+              fontWeight: 700,
+              color: '#E85D04',
+              letterSpacing: 2,
+              textTransform: 'uppercase',
+              margin: '0 0 12px',
+              textAlign: 'center',
+            }}>
+              Manufactured &amp; Marketed By
+            </p>
+            <h3 style={{
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              fontWeight: 800,
+              fontSize: 'clamp(18px, 3vw, 24px)',
+              color: '#1B2A4A',
+              margin: '0 0 20px',
+              textAlign: 'center',
+              lineHeight: 1.3,
+            }}>
+              OXIMAX AGRITECH INDUSTRIES PVT. LTD. PUNE
+            </h3>
+            <div style={{
+              display: 'grid',
+              gap: 14,
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 15,
+              color: '#4B5563',
+              lineHeight: 1.7,
+            }}>
+              <p style={{ margin: 0 }}>
+                <strong style={{ color: '#1B2A4A' }}>Factory:</strong>{' '}
+                G.No 120/4, A/p-Jawkhede (Khalsa), Tal.-Pathardi, Dist-Ahilyanagar, MH 414505
+              </p>
+              <p style={{ margin: 0 }}>
+                <strong style={{ color: '#1B2A4A' }}>FSSAI License Number:</strong> 11526999000564
+              </p>
+              <p style={{ margin: 0 }}>
+                <strong style={{ color: '#1B2A4A' }}>For queries, feedback or complaints:</strong>
+              </p>
+              <p style={{ margin: 0 }}>
+                Email:{' '}
+                <a href="mailto:customercareoximax2@gmail.com" style={{ color: '#E85D04', fontWeight: 600, textDecoration: 'none' }}>
+                  customercareoximax2@gmail.com
+                </a>
+              </p>
+              <p style={{ margin: 0 }}>
+                Call:{' '}
+                <a href="tel:+917276861719" style={{ color: '#E85D04', fontWeight: 600, textDecoration: 'none' }}>
+                  +91 72768 61719
+                </a>
+              </p>
+            </div>
+          </div>
+
           <div style={{ textAlign: 'center', marginTop: 48 }}>
             <button
               onClick={() => navigate('contact')}

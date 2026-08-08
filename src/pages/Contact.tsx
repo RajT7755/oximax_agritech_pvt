@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Are your products FSSAI licensed?',
-    a: 'Yes, OXIMAX AGRITECH is FSSAI licensed. Our products comply with FSSAI standards and we can provide our license documentation on request.',
+    a: 'Yes. OXIMAX AGRITECH INDUSTRIES PVT. LTD. is FSSAI licensed (License No. 11526999000564). Our products comply with FSSAI standards and we can provide license documentation on request.',
   },
   {
     q: 'What packaging formats are available for SMP?',
@@ -224,8 +224,8 @@ export default function Contact({ navigate: _navigate }: Props) {
                         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.28a16 16 0 006.81 6.81l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                       </svg>
                     ),
-                    label: 'Phone',
-                    value: '+91 12345 67890',
+                    label: 'Phone / Call',
+                    value: '+91 72768 61719',
                   },
                   {
                     icon: (
@@ -234,7 +234,7 @@ export default function Contact({ navigate: _navigate }: Props) {
                       </svg>
                     ),
                     label: 'Email',
-                    value: 'info@oximaxagritech.com',
+                    value: 'customercareoximax2@gmail.com',
                   },
                   {
                     icon: (
@@ -243,7 +243,7 @@ export default function Contact({ navigate: _navigate }: Props) {
                       </svg>
                     ),
                     label: 'WhatsApp',
-                    value: '+91 12345 67890',
+                    value: '+91 72768 61719',
                   },
                   {
                     icon: (
@@ -251,8 +251,26 @@ export default function Contact({ navigate: _navigate }: Props) {
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
                       </svg>
                     ),
-                    label: 'Address',
-                    value: 'OXIMAX AGRITECH Industries Pvt. Ltd., Plot No. 125/4, Bhattewadi Village, Post Office Tisgaon, Pathardi Taluka, Ahilyanagar, Maharashtra 414106, India',
+                    label: 'Manufactured & Marketed By',
+                    value: 'OXIMAX AGRITECH INDUSTRIES PVT. LTD. PUNE',
+                  },
+                  {
+                    icon: (
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E85D04" strokeWidth="2">
+                        <path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6" />
+                      </svg>
+                    ),
+                    label: 'Factory Address',
+                    value: 'G.No 120/4, A/p-Jawkhede (Khalsa), Tal.-Pathardi, Dist-Ahilyanagar, MH 414505',
+                  },
+                  {
+                    icon: (
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E85D04" strokeWidth="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      </svg>
+                    ),
+                    label: 'FSSAI License Number',
+                    value: '11526999000564',
                   },
                 ].map((contact) => (
                   <div key={contact.label} style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>

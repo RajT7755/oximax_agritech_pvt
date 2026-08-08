@@ -35,12 +35,24 @@ export default function Footer({ navigate }: Props) {
               fontSize: 13,
               color: 'rgba(255,255,255,0.5)',
               lineHeight: 1.65,
-              margin: 0,
-              maxWidth: 320,
+              margin: '0 0 10px',
+              maxWidth: 340,
             }}>
-              Plot No. 125/4, Bhattewadi Village,<br />
-              Post Office Tisgaon, Pathardi Taluka,<br />
-              Ahilyanagar, Maharashtra 414106, India
+              OXIMAX AGRITECH INDUSTRIES PVT. LTD. PUNE<br />
+              Factory: G.No 120/4, A/p-Jawkhede (Khalsa),<br />
+              Tal.-Pathardi, Dist-Ahilyanagar, MH 414505
+            </p>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 13,
+              color: 'rgba(255,255,255,0.5)',
+              lineHeight: 1.65,
+              margin: 0,
+              maxWidth: 340,
+            }}>
+              FSSAI: 11526999000564<br />
+              <a href="mailto:customercareoximax2@gmail.com" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}>customercareoximax2@gmail.com</a><br />
+              Call: <a href="tel:+917276861719" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}>+91 72768 61719</a>
             </p>
           </div>
 
@@ -138,7 +150,7 @@ export default function Footer({ navigate }: Props) {
             © 2026 OXIMAX AGRITECH Industries Private Limited. All rights reserved.
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.4)', margin: 0 }}>
-            FSSAI Licensed · Made in India
+            FSSAI Lic. 11526999000564 · Made in India
           </p>
         </div>
       </div>
