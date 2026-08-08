@@ -28,18 +28,20 @@ export default function Home({ navigate }: Props) {
     <div className="has-mob-cta">
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="hero" aria-label="Premium dairy products">
-        <video
-          className="hero-video"
-          src={heroVideo}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={smpImg}
-          aria-hidden
-        />
-        <div className="hero-overlay" aria-hidden />
+        {/* Clear video — soft edge blend only (no full-screen fog/blur) */}
+        <div className="hero-video-frame" aria-hidden>
+          <video
+            className="hero-video"
+            src={heroVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={smpImg}
+          />
+          <div className="hero-edge-blend" />
+        </div>
         <div className="container hero-content">
           {/* Top of video: badge — bright orange, larger */}
           <div className="hero-top">

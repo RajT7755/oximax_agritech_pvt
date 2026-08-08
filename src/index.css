@@ -82,28 +82,44 @@ button, input, select, textarea {
   padding: 0;
 }
 
-.hero-video {
+/* Frame matches native video size; video stays sharp/clear */
+.hero-video-frame {
   position: absolute;
   left: 50%;
   top: 50%;
   z-index: 0;
   transform: translate(-50%, -50%);
-  /* Exact native size, or fit inside viewport — no zoom past 100% */
   width: min(100%, calc(1px * var(--hero-video-w)));
   height: min(100%, calc(1px * var(--hero-video-h)));
   max-width: 100%;
   max-height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
   object-fit: contain;
   object-position: center;
+  /* No blur / no filter on the video itself */
+  filter: none;
   pointer-events: none;
 }
 
-.hero-overlay {
+/* Soft cream blend only on the four borders — center stays clear */
+.hero-edge-blend {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(253, 251, 247, 0.62);
   pointer-events: none;
+  background:
+    linear-gradient(to right, #FDFBF7 0%, transparent 12%),
+    linear-gradient(to left, #FDFBF7 0%, transparent 12%),
+    linear-gradient(to bottom, #FDFBF7 0%, transparent 14%),
+    linear-gradient(to top, #FDFBF7 0%, transparent 14%);
 }
 
 .hero-content {
@@ -112,7 +128,7 @@ button, input, select, textarea {
   width: 100%;
   max-width: 900px;
   text-align: center;
-  /* Fill hero height: spacer | middle title | bottom CTA */
+  /* Fill hero height: top badge | middle title | bottom CTA */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -120,6 +136,13 @@ button, input, select, textarea {
   align-items: center;
   padding: clamp(16px, 3vw, 28px) clamp(16px, 4vw, 24px) clamp(20px, 4vw, 36px);
   box-sizing: border-box;
+}
+
+/* Light shadow so text stays readable without fogging the video */
+.hero-top span,
+.hero-middle h1,
+.hero-bottom p {
+  text-shadow: 0 1px 2px rgba(253, 251, 247, 0.9), 0 0 18px rgba(253, 251, 247, 0.65);
 }
 
 /* Top / middle / bottom — equal flex so title stays centered */
@@ -154,11 +177,8 @@ button, input, select, textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-video {
+  .hero-video-frame {
     display: none;
-  }
-  .hero-overlay {
-    background: #FDFBF7;
   }
 }
 
