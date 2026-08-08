@@ -175,7 +175,7 @@ export default function Contact({ navigate: _navigate }: Props) {
                   >
                     <option value="">Select a product...</option>
                     <option value="smp">Instant Spray Dried Skimmed Milk Powder</option>
-                    <option value="butter">Table Butter 5 kg</option>
+                    <option value="butter">Table Butter 10 kg</option>
                     <option value="both">Both Products</option>
                     <option value="other">General Enquiry</option>
                   </select>

@@ -71,7 +71,7 @@ export default function Footer({ navigate }: Props) {
               </h4>
               {[
                 { label: 'Instant SMP', page: 'smp' as Page },
-                { label: 'Table Butter 5 kg', page: 'butter' as Page },
+                { label: 'Table Butter 10 kg', page: 'butter' as Page },
                 { label: 'All Products', page: 'products' as Page },
               ].map((item) => (
                 <button

@@ -84,10 +84,10 @@ export default function Products({ navigate }: Props) {
             />
             <ProductCard
               image={butterImg}
-              imageAlt="OXIMAX Table Butter 5kg cardboard box"
-              title="Table Butter 5 kg"
+              imageAlt="OXIMAX Table Butter 10 kg cardboard box"
+              title="Table Butter 10 kg"
               description="Premium Table Butter for foodservice and industrial use — consistent taste, texture, and performance. Reliable local supply for food manufacturers and operators."
-              badges={[{ label: 'Net Weight', value: '5 kg' }]}
+              badges={[{ label: 'Net Weight', value: '10 kg' }]}
               detailPage="butter"
               navigate={navigate}
             />

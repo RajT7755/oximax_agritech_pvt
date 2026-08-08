@@ -21,7 +21,7 @@ export default function ProductDetailButter({ navigate }: Props) {
               <span style={{ color: '#D1D5DB', fontSize: 13 }}>›</span>
             </span>
           ))}
-          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#1B2A4A', fontWeight: 500 }}>Table Butter 5 kg</span>
+          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#1B2A4A', fontWeight: 500 }}>Table Butter 10 kg</span>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ export default function ProductDetailButter({ navigate }: Props) {
             }}>
               <img
                 src={butterImg}
-                alt="Table Butter 5 kg"
+                alt="Table Butter 10 kg"
                 className="img-contain"
                 style={{ maxHeight: 420, width: '100%', height: 'auto' }}
               />
@@ -58,15 +58,15 @@ export default function ProductDetailButter({ navigate }: Props) {
                 margin: '0 0 16px',
                 lineHeight: 1.2,
               }}>
-                Table Butter 5 kg
+                Table Butter 10 kg
               </h1>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: '#6B7280', lineHeight: 1.75, margin: '0 0 32px' }}>
-                Premium Table Butter packed in 5 kg cartons. Ideal for foodservice, bakery and industrial applications with consistent taste and performance.
+                Premium Table Butter packed in 10 kg cartons. Ideal for foodservice, bakery and industrial applications with consistent taste and performance.
               </p>
 
               <div className="spec-row" style={{ marginBottom: 32 }}>
                 {[
-                  { value: '5 kg', label: 'Net Weight' },
+                  { value: '10 kg', label: 'Net Weight' },
                   { value: 'Table', label: 'Butter Type' },
                 ].map((s) => (
                   <div key={s.label} style={{ backgroundColor: '#FFFFFF', border: '1px solid #F3F4F6', borderRadius: 12, padding: 16, textAlign: 'center', minWidth: 0 }}>
@@ -165,7 +165,7 @@ export default function ProductDetailButter({ navigate }: Props) {
           </h3>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
             {[
-              '5 kg carton packing',
+              '10 kg carton packing',
               'Keep in a cool and dry place',
               'Use no hooks',
               'Protect from direct heat',

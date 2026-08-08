@@ -39,7 +39,7 @@ const values = [
 
 const slideshowImages = [
   { src: aboutImg, alt: 'OXIMAX Instant Skimmed Milk Powder' },
-  { src: butterImg, alt: 'OXIMAX Table Butter 5 kg' },
+  { src: butterImg, alt: 'OXIMAX Table Butter 10 kg' },
 ]
 
 export default function About({ navigate }: Props) {

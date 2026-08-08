@@ -246,7 +246,7 @@ export default function Home({ navigate }: Props) {
               <div className="img-frame">
                 <img
                   src={butterImg}
-                  alt="Table Butter 5 kg"
+                  alt="Table Butter 10 kg"
                   className="img-contain"
                   style={{ transition: 'transform 0.5s' }}
                   onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)' }}
@@ -262,7 +262,7 @@ export default function Home({ navigate }: Props) {
                   margin: '0 0 10px',
                   lineHeight: 1.3,
                 }}>
-                  Table Butter 5 kg
+                  Table Butter 10 kg
                 </h3>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: '#6B7280', lineHeight: 1.65, margin: '0 0 20px' }}>
                   Premium Table Butter for foodservice and industrial applications with consistent performance.
